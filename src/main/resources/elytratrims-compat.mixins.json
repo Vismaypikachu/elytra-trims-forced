@@ -8,6 +8,6 @@
     "BetterSmithingTableMixin",
     "ElytraSlotLayerMixin",
     "ElytraTrinketFeatureRendererMixin",
-    "MinecraftCapesCompat"
+    "MinecraftCapesCompatMixin"
   ]
 }

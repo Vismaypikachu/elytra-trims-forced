@@ -25,7 +25,7 @@ import org.spongepowered.asm.mixin.injection.At;
 @RequireMod("minecraftcapes")
 @SuppressWarnings("ALL")
 @Mixin(value = ElytraFeatureRenderer.class, priority = 1500)
-public class MinecraftCapesCompat {
+public class MinecraftCapesCompatMixin {
     @TargetHandler(mixin = "net.minecraftcapes.mixin.MixinElytraLayer", name = "render")
     @ModifyExpressionValue(method = "@MixinSquared:Handler", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/network/AbstractClientPlayerEntity;isPartVisible(Lnet/minecraft/client/render/entity/PlayerModelPart;)Z"))
     private boolean cancelCapeRender(boolean original, @Local(argsOnly = true) LivingEntity entity) {
