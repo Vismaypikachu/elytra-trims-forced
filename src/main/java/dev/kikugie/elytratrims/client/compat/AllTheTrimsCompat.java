@@ -5,10 +5,10 @@ import dev.kikugie.elytratrims.client.ETClient;
 import dev.kikugie.elytratrims.client.render.ETFeatureRenderer;
 import dev.kikugie.elytratrims.client.resource.ETAtlasHolder;
 import dev.kikugie.elytratrims.client.resource.ImageUtils;
+import net.minecraft.client.model.Model;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;
-import net.minecraft.client.render.entity.model.ElytraEntityModel;
 import net.minecraft.client.render.item.ItemRenderer;
 import net.minecraft.client.texture.Sprite;
 import net.minecraft.client.texture.SpriteAtlasTexture;
@@ -16,14 +16,12 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.trim.ArmorTrim;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Util;
 
 import java.awt.*;
 import java.util.List;
-import java.util.function.BiFunction;
 
 public class AllTheTrimsCompat {
-    public static void renderTrim(SpriteAtlasTexture atlas, ElytraEntityModel<?> elytra, ArmorTrim trim, ItemStack stack, MatrixStack matrices, VertexConsumerProvider provider, int light, float alpha) {
+    public static void renderTrim(SpriteAtlasTexture atlas, Model elytra, ArmorTrim trim, ItemStack stack, MatrixStack matrices, VertexConsumerProvider provider, int light, float alpha) {
         List<Color> palette = PaletteHelper.getPalette(trim.getMaterial().value().ingredient().value());
         Sprite sprite;
         for(int i = 0; i < 8; i++) {

@@ -17,8 +17,8 @@ import dev.kikugie.elytratrims.common.access.ElytraOverlaysAccessor;
 import dev.kikugie.elytratrims.common.plugin.ModStatus;
 import net.minecraft.block.entity.BannerPattern;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.model.Model;
 import net.minecraft.client.render.*;
-import net.minecraft.client.render.entity.model.ElytraEntityModel;
 import net.minecraft.client.render.item.ItemRenderer;
 import net.minecraft.client.texture.Sprite;
 import net.minecraft.client.texture.SpriteAtlasTexture;
@@ -71,7 +71,7 @@ public class ETFeatureRenderer {
         patternGetter = Util.memoize(this::patternSpriteGetter);
     }
 
-    public void render(ElytraEntityModel<?> elytra, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity entity, ItemStack stack, int light, float alpha) {
+    public void render(Model elytra, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity entity, ItemStack stack, int light, float alpha) {
         if (!holder.isReady()) return;
         if (!cancelRender(RenderType.GLOW, entity) && ETServer.GLOWING.hasGlow(stack))
             light = 0xFF00FF;
@@ -83,7 +83,7 @@ public class ETFeatureRenderer {
         renderElytraTrims(elytra, matrices, provider, entity, stack, light, alpha);
     }
 
-    private void renderElytraTrims(ElytraEntityModel<?> elytra, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity entity, ItemStack stack, int light, float alpha) {
+    private void renderElytraTrims(Model elytra, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity entity, ItemStack stack, int light, float alpha) {
         if (cancelRender(RenderConfig.RenderType.TRIMS, entity))
             return;
 
@@ -105,7 +105,7 @@ public class ETFeatureRenderer {
             renderTrim(elytra, trim, matrices, provider, entity, stack, light, alpha);
     }
 
-    private void renderElytraPatterns(ElytraEntityModel<?> elytra, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity entity, ItemStack stack, int light, float alpha) {
+    private void renderElytraPatterns(Model elytra, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity entity, ItemStack stack, int light, float alpha) {
         if (cancelRender(RenderConfig.RenderType.PATTERNS, entity))
             return;
 
@@ -128,7 +128,7 @@ public class ETFeatureRenderer {
         }
     }
 
-    private void renderElytraOverlay(ElytraEntityModel<?> elytra, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity entity, ItemStack stack, int light, float alpha) {
+    private void renderElytraOverlay(Model elytra, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity entity, ItemStack stack, int light, float alpha) {
         if (cancelRender(RenderType.COLOR, entity))
             return;
 
@@ -141,7 +141,7 @@ public class ETFeatureRenderer {
      * Easter egg hee hee.
      * @return {@code true} if jeb_ variant was rendered.
      */
-    private boolean renderJebElytra(ElytraEntityModel<?> elytra, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity entity, ItemStack stack, int light, float alpha) {
+    private boolean renderJebElytra(Model elytra, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity entity, ItemStack stack, int light, float alpha) {
         if (cancelRender(RenderType.COLOR, entity))
             return true;
 
@@ -157,7 +157,7 @@ public class ETFeatureRenderer {
     /**
      * Implementation for {@link ETFeatureRenderer#renderElytraOverlay} and {@link ETFeatureRenderer#renderJebElytra}
      */
-    private void renderElytraColor(ElytraEntityModel<?> elytra, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity ignoredEntity, ItemStack stack, int light, int color, float alpha) {
+    private void renderElytraColor(Model elytra, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity ignoredEntity, ItemStack stack, int light, int color, float alpha) {
         Sprite sprite = getOverlaySprite();
         if (ImageUtils.isMissing(sprite))
             return;
@@ -174,7 +174,7 @@ public class ETFeatureRenderer {
         elytra.render(matrices, vertexConsumer, light, OverlayTexture.DEFAULT_UV, red, green, blue, alpha);
     }
 
-    private void renderTrim(ElytraEntityModel<?> elytra, ArmorTrim trim, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity entity, ItemStack stack, int light, float alpha) {
+    private void renderTrim(Model elytra, ArmorTrim trim, MatrixStack matrices, VertexConsumerProvider provider, LivingEntity entity, ItemStack stack, int light, float alpha) {
         if (trim == null)
             return;
 
