@@ -5,6 +5,7 @@
   "plugin": "dev.kikugie.elytratrims.common.plugin.ETMixinPlugin",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "ArmoredElytraLayerMixin",
     "BetterSmithingTableMixin",
     "ElytraSlotLayerMixin",
     "ElytraTrinketFeatureRendererMixin",
