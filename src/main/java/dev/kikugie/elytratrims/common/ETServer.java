@@ -5,9 +5,7 @@ import dev.kikugie.elytratrims.common.config.ServerConfigs;
 import dev.kikugie.elytratrims.common.recipe.GlowingItem;
 import net.minecraft.block.LeveledCauldronBlock;
 import net.minecraft.block.cauldron.CauldronBehavior;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.DyeableItem;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.stat.Stats;
 import net.minecraft.util.ActionResult;
@@ -54,5 +52,9 @@ public class ETServer {
                 /*? if >1.20.2 */
                 /*.map()*/
                 .put(Items.ELYTRA, CLEAN_ELYTRA::interact);
+    }
+
+    public static boolean isProbablyElytra(Item item) {
+        return item instanceof ElytraItem || ETServerWrapper.getItemId(item).getPath().contains("elytra");
     }
 }

@@ -35,7 +35,7 @@ public class ElytraGlowRecipe extends SpecialCraftingRecipe {
 
         for (int slot = 0; slot < inventory.size(); slot++) {
             ItemStack stack = inventory.getStack(slot);
-            if (stack.getItem() instanceof GlowingItem) {
+            if (ETServer.isProbablyElytra(stack.getItem())) {
                 item++;
             } else if (stack.getItem() == Items.GLOW_INK_SAC) {
                 sac++;
@@ -60,7 +60,7 @@ public class ElytraGlowRecipe extends SpecialCraftingRecipe {
         ItemStack item = ItemStack.EMPTY;
         for (int slot = 0; slot < inventory.size(); slot++) {
             ItemStack stack = inventory.getStack(slot);
-            if (!(stack.getItem() instanceof ElytraItem)) continue;
+            if (!ETServer.isProbablyElytra(stack.getItem())) continue;
             item = stack.copy();
         }
         ETServer.GLOWING.setGlow(item);

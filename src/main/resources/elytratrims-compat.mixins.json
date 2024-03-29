@@ -6,9 +6,11 @@
   "compatibilityLevel": "JAVA_17",
   "client": [
     "ArmoredElytraLayerMixin",
+    "BannerElytraItemMixin",
     "BetterSmithingTableMixin",
     "ElytraSlotLayerMixin",
     "ElytraTrinketFeatureRendererMixin",
+    "GlowingElytraItemMixin",
     "MinecraftCapesCompatMixin"
   ]
 }

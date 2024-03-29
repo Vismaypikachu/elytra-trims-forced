@@ -39,7 +39,7 @@ public class ElytraPatternRecipe extends SpecialCraftingRecipe {
 
         for (int slot = 0; slot < inventory.size(); slot++) {
             ItemStack stack = inventory.getStack(slot);
-            if (stack.getItem() instanceof ElytraItem) {
+            if (ETServer.isProbablyElytra(stack.getItem())) {
                 elytra++;
             } else if (stack.getItem() instanceof BannerItem) {
                 if (BannerBlockEntity.getPatternCount(stack) == 0) return false;
@@ -69,7 +69,7 @@ public class ElytraPatternRecipe extends SpecialCraftingRecipe {
             ItemStack stack = inventory.getStack(slot);
             if (stack.isEmpty()) continue;
 
-            if (stack.getItem() instanceof ElytraItem) {
+            if (ETServer.isProbablyElytra(stack.getItem())) {
                 elytra = stack.copy();
             } else if (stack.getItem() instanceof BannerItem) {
                 banner = stack;

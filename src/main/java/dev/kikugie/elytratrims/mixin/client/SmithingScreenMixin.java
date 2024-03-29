@@ -2,11 +2,11 @@ package dev.kikugie.elytratrims.mixin.client;
 
 import dev.kikugie.elytratrims.client.access.ElytraRotationAccessor;
 import dev.kikugie.elytratrims.client.access.LivingEntityAccessor;
+import dev.kikugie.elytratrims.common.ETServer;
 import dev.kikugie.elytratrims.common.plugin.MixinConfigurable;
 import net.minecraft.client.gui.screen.ingame.SmithingScreen;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.decoration.ArmorStandEntity;
-import net.minecraft.item.ElytraItem;
 import net.minecraft.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Quaternionf;
@@ -37,7 +37,7 @@ public class SmithingScreenMixin implements ElytraRotationAccessor {
     @Inject(method = "equipArmorStand", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;isEmpty()Z"), cancellable = true)
     private void equipElytra(ItemStack stack, CallbackInfo ci) {
         if (armorStand == null) return;
-        if (stack.getItem() instanceof ElytraItem) {
+        if (ETServer.isProbablyElytra(stack.getItem())) {
             isElytra = true;
             armorStand.equipStack(EquipmentSlot.CHEST, stack.copy());
             ci.cancel();

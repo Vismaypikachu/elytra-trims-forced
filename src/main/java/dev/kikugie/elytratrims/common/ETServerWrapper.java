@@ -4,7 +4,10 @@ package dev.kikugie.elytratrims.common;
 import dev.kikugie.elytratrims.common.config.ServerConfigs;
 import dev.kikugie.elytratrims.common.recipe.ETRecipeSerializers;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.item.Item;
 import net.minecraft.recipe.RecipeSerializer;
+import net.minecraft.registry.Registries;
+import net.minecraft.util.Identifier;
 
 public class ETServerWrapper implements ModInitializer {
     @Override
@@ -16,12 +19,18 @@ public class ETServerWrapper implements ModInitializer {
         if (ServerConfigs.getConfig().addGlow)
             RecipeSerializer.register("crafting_special_elytraglow", ETRecipeSerializers.ELYTRA_GLOW);
     }
+
+    public static Identifier getItemId(Item item) {
+        return Registries.ITEM.getId(item);
+    }
 }
 /*?} elif forge {*//*
 import dev.kikugie.elytratrims.common.config.ServerConfigs;
 import dev.kikugie.elytratrims.client.ETClientWrapper;
 import dev.kikugie.elytratrims.common.recipe.ETRecipeSerializers;
+import net.minecraft.item.Item;
 import net.minecraft.recipe.RecipeSerializer;
+import net.minecraft.util.Identifier;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -45,6 +54,10 @@ public class ETServerWrapper {
 
     public static void init(FMLCommonSetupEvent event) {
         ETServer.init();
+    }
+
+    public static Identifier getItemId(Item item) {
+        return ForgeRegistries.ITEMS.getKey(item);
     }
 }
 *//*?} else {*//*
