@@ -3,7 +3,7 @@ elytratrims:
     response:
       get_mode: "Modo %s actual es %s"
       set_mode: "Modo %s se ha cambiado al %s"
-      reset: Configuración reseteada!
+      reset: ¡Configuración reseteada!
   config:
     title: Elytra Trims
     category:
