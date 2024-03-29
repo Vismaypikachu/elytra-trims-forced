@@ -9,7 +9,6 @@
     "common.GlowingElytraItemMixin",
     "common.ItemMixin",
     "common.ItemStackMixin",
-    "common.SimpleRegistryMixin",
     "common.SynchronizeRecipesS2CPacketMixin"
   ],
   "client": [
@@ -17,7 +16,6 @@
     "client.ElytraFeatureRendererMixin",
     "client.LivingEntityMixin",
     "client.PalettedPermutationsAtlasSourceMixin",
-    "client.SimpleRegistryMixin",
     "client.SmithingScreenMixin"
   ],
   "injectors": {

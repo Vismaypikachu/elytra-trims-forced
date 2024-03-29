@@ -1,5 +1,25 @@
 {
   "values": [
-    "minecraft:elytra"
+    "minecraft:elytra",
+    {
+      "id": "mythicmetals:celestium_elytra",
+      "required": false
+    },
+    {
+      "id": "betterend:elytra_armored",
+      "required": false
+    },
+    {
+      "id": "betterend:elytra_crystalite",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:tarantula_hawk_elytra",
+      "required": false
+    },
+    {
+      "id": "mekanism:hdpe_elytra",
+      "required": false
+    }
   ]
 }

@@ -8,7 +8,6 @@ public class ETClient {
     private static ETClientConfig config;
     private static ETAtlasHolder atlasHolder;
     private static ETFeatureRenderer renderer;
-    public static boolean isTrimmable = false;
 
     public static void init() {
 
