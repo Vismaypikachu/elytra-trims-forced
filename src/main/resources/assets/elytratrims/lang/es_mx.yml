@@ -13,32 +13,32 @@ elytratrims:
     texture:
       useBannerTextures:
         .: Usa texturas de estandartes
-        tooltip: Usa texturas de estandarte para los diseños de los élitros en vez de para los del escudo.
+        tooltip: Usa las texturas del estandarte para los diseños de las Elytras en vez de para los escudos.
       cropTrims:
         .: Recortar diseños de armadura
-        tooltip: Recorta diseños de armadura para que quepan en los élitros.
+        tooltip: Recorta los diseños de armadura para que quepan en las Elytras.
       useDarkerTrim:
         .: Usar diseño de armadura oscuro
-        tooltip: "Usa un diseño de armadura para los élitros más oscuro si es posible.\nEsto usa el mismo color que cuando aplicas un diseño de armadura a una pieza de armadura del mismo material."
+        tooltip: "Usa un diseño de armadura para las Elytras, más oscuro si es posible.\nEsto usa el mismo color que cuando aplicas un diseño de armadura a una pieza del mismo material."
       showBannerIcon:
         .: Mostrar icono de estandarte
-        tooltip: Muestra el icono del estandarte en el objeto de élitros.
+        tooltip: Muestra el icono del estandarte en la Elytra.
     type:
       color:
         .: Tinte
-        tooltip: Muestra élitros tintados.
+        tooltip: Muestra Elytras tintadas.
       cape:
         .: Capa
-        tooltip: Muestra las texturas de capas en los élitros.
+        tooltip: Muestra las texturas de capas en las Elytras.
       glow:
         .: Luminoso
-        tooltip: Haz brillar las características de los élitros.
+        tooltip: Haz brillar las características de las Elytras.
       patterns:
         .: Patrones
-        tooltip: Muestra los patrones de estandarte en los élitros.
+        tooltip: Muestra los patrones de estandarte en las Elytras.
       trims:
         .: Diseños de armadura
-        tooltip: Muestra los diseños de armadura en los élitros.
+        tooltip: Muestra los diseños de armadura en las Elytras.
       global:
         .: Global
         tooltip: Sobreescribe todos los otros tipos de renderizado.
