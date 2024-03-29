@@ -73,7 +73,7 @@ It's likely to work with other mods, but you'll have to try it out.
 - Custom elytras:
   - [Mythic Metals](https://modrinth.com/mod/mythicmetals)
   - [Better End](https://modrinth.com/mod/betterend)
-  - *Any mod with custom elytras should work*
+  - [Mekanism](https://modrinth.com/mod/mekanism)
 - Extra trim patterns (Requires [Extensions](https://modrinth.com/mod/elytra-trims-extensions): 
   - [More Armor Trims](https://modrinth.com/mod/more-armor-trims)
   - [Geode+](https://modrinth.com/mod/geode-plus)
@@ -115,7 +115,7 @@ trims or add a unique design to your elytra pattern with ease.
 Trims can't be removed without other mods due to vanilla parity.
 
 > Trims look bad with capes!
-- Install [Mod Menu](<https://modrinth.com/mod/modmenu>) and [YACL](<https://modrinth.com/mod/yacl>). In the mods tab find ET and open its settings. There you can disable rendering elytra capes. This is preferable to the vanilla cape setting because it will keep the cape while not wearing an elytra.
+- Install [Mod Menu](<https://modrinth.com/mod/modmenu>) (Fabric) and [YACL](<https://modrinth.com/mod/yacl>). In the mods tab find ET and open its settings. There you can disable rendering elytra capes. This is preferable to the vanilla cape setting because it will keep the cape while not wearing an elytra.
 
 ## Roadmap
 - [x] Elytra trims (v1.0)
