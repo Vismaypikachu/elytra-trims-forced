@@ -44,6 +44,10 @@ Install the main mod ([Elytra Trims](https://modrinth.com/mod/elytra-trims)) on 
 
 ## [Alex's Caves](https://modrinth.com/mod/alexs-caves) (Forge)
 ![AC](https://cdn.modrinth.com/data/5edtQ4at/images/14fe7e56d92683cd77f9f5401db8894698b1d444.png)
+<hr>
+
+## [More Sniffer Flowers](https://modrinth.com/mod/more-sniffer-flowers) (Forge)
+![MSF](https://cdn.modrinth.com/data/5edtQ4at/images/b673ff8837f5cd36b8988acf0fb8f8798cf937fc.png)
 
 # Support this mod
 If you know other mods or datapacks, that add trim patterns, feel free to submit them via a GitHub issue report or send me a message on the discord server!
