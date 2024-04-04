@@ -24,8 +24,9 @@ Install the main mod ([Elytra Trims](https://modrinth.com/mod/elytra-trims)) on 
 
 # Supported mods
 ## [More Armor Trims](https://modrinth.com/mod/more-armor-trims) (Fabric)
-![MAT #1](https://cdn.modrinth.com/data/5edtQ4at/images/f606a6bff80aa2882b7ea8d5a326179e61031abb.png)  
-![MAT #2](https://cdn.modrinth.com/data/5edtQ4at/images/e2a337f804c8d010d2f2b8ce369910558e134dea.png)
+![MAT #1](https://cdn.modrinth.com/data/5edtQ4at/images/a14a4a8064a83654e28aa4fe363154df7bf6c5d5.png)
+![MAT #2](https://cdn.modrinth.com/data/5edtQ4at/images/9e5e1ecde0fa793bf9b79d7babe8849d0052e0d1.png)
+![MAT #3](https://cdn.modrinth.com/data/5edtQ4at/images/1ea603724a77fa24b0b12c45d1703b1382da9b9b.png)
 <hr>
 
 ## [Ancient Aether](https://modrinth.com/mod/ancient-aether) (Forge)

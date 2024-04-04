@@ -17,6 +17,7 @@ configurations {
 
 dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.deps_fabric}"
+    modImplementation fabricApi.module("fabric-resource-loader-v0", project.fabric_api)
 
     common(project(path: ":extensions:common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":extensions:common", configuration: "transformProductionFabric")) { transitive false }

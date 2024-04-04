@@ -12,6 +12,11 @@
     "sources": "https://github.com/Kikugie/elytra-trims",
     "issues": "https://github.com/Kikugie/elytra-trims/issues"
   },
+  "entrypoints": {
+    "client": [
+      "dev.kikugie.elytratrims.extensions.ExtensionsMod"
+    ]
+  },
   "license": "LGPLv3",
   "environment": "client",
   "icon": "assets/elytratrims_extensions/icon.png",
