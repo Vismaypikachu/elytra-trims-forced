@@ -6,7 +6,7 @@ import club.minnced.discord.webhook.send.WebhookMessageBuilder
 plugins {
     id("dev.kikugie.stonecutter")
     id("co.uzzu.dotenv.gradle") version "4.0.0"
-    id("dev.architectury.loom") version "1.4-SNAPSHOT" apply false
+    id("dev.architectury.loom") version "1.6-SNAPSHOT" apply false
     id("me.modmuss50.mod-publish-plugin") version "0.4.+" apply false
 }
 stonecutter active "1.19.4-fabric" /* [SC] DO NOT EDIT */
