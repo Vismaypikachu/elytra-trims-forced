@@ -13,16 +13,18 @@ elytratrims:
     texture:
       useBannerTextures:
         .: Utiliser les textures des bannières
-        tooltip: "Utilise les textures des bannières pour les motifs d'élytres plutôt que celles des boucliers."
+        tooltip: Utilise les textures des bannières pour les motifs d'élytres plutôt que celles des boucliers.
       cropTrims:
         .: Rogner les ornements
-        tooltip: "Rogne les ornements d'armure pour s'adapter aux élytres."
+        tooltip: Rogne les ornements d'armure pour s'adapter aux élytres.
       useDarkerTrim:
         .: Utiliser les ornements assombris
-        tooltip: "Utilise une couleur d'ornement plus sombre pour les élytres si elle existe.\nCela utilise la même couleur que lorsque vous appliquez un ornement à une pièce d'armure du même matériau."
+        tooltip: |
+          Utilise une couleur d'ornement plus sombre pour les élytres si elle existe.
+          Cela utilise la même couleur que lorsque vous appliquez un ornement à une pièce d'armure du même matériau.
       showBannerIcon:
-        .: "Afficher l'icône des bannières"
-        tooltip: "Affiche l'icône des bannières sur les élytres dans l'inventaire."
+        .: Afficher l'icône des bannières
+        tooltip: Affiche l'icône des bannières sur les élytres dans l'inventaire.
     type:
       color:
         .: Teinte
@@ -38,7 +40,7 @@ elytratrims:
         tooltip: Affiche les motifs de bannière sur les élytres.
       trims:
         .: Ornements
-        tooltip: "Afficher les ornements d'armure sur les élytres."
+        tooltip: Afficher les ornements d'armure sur les élytres.
       global:
         .: Global
         tooltip: Remplace tous les autres types de rendu.

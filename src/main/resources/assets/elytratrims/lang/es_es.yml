@@ -19,7 +19,9 @@ elytratrims:
         tooltip: Recorta diseños de armadura para que quepan en los élitros.
       useDarkerTrim:
         .: Usar diseño de armadura oscuro
-        tooltip: "Usa un diseño de armadura para los élitros más oscuro si es posible.\nEsto usa el mismo color que cuando aplicas un diseño de armadura a una pieza de armadura del mismo material."
+        tooltip: |
+          Usa un diseño de armadura para los élitros más oscuro si es posible.
+          Esto usa el mismo color que cuando aplicas un diseño de armadura a una pieza de armadura del mismo material.
       showBannerIcon:
         .: Mostrar icono de estandarte
         tooltip: Muestra el icono del estandarte en el objeto de élitros.
